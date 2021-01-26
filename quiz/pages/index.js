@@ -1,8 +1,11 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Widget from '../src/components/widget.js'
-import Footer from '../src/components/footer.js'
-import GitHubCorner from '../src/components/githubcorner.js'
+import styled from 'styled-components';
+import db from '../db.json';
+import Widget from '../src/components/widget.js';
+import Footer from '../src/components/footer.js';
+import GitHubCorner from '../src/components/githubcorner.js';
+import Head from 'next/head';
+import React from 'react';
+import { useRouter } from 'next/router';
 
 const Title = styled.h1`
   font-size: 50px;
@@ -41,15 +44,37 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState('');
+
   return (
     <BackgroundImage>
+      <Head><title>Witcher Quiz</title></Head>
       <QuizContainer>
         <Widget>
         <Widget.Header>
               <h1>The Witcher</h1>
             </Widget.Header>
-          <Widget.Content>
-            <p>asdadasd</p>
+            <Widget.Content>
+            <form onSubmit={function (infosDoEvento) {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
+              console.log('Fazendo uma submissão por meio do react');
+            }}
+            >
+              <input
+                onChange={function (infosDoEvento) {
+                  console.log(infosDoEvento.target.value);
+                  // State
+                  // name = infosDoEvento.target.value;
+                  setName(infosDoEvento.target.value);
+                }}
+                placeholder="digite seu nome"
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Widget>
