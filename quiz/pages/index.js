@@ -2,10 +2,13 @@ import styled from 'styled-components';
 import db from '../db.json';
 import Widget from '../src/components/widget.js';
 import Footer from '../src/components/footer.js';
+import Input from '../src/components/input.js';
 import GitHubCorner from '../src/components/githubcorner.js';
 import Head from 'next/head';
 import React from 'react';
+import Button from '../src/components/button.js';
 import { useRouter } from 'next/router';
+import QuizContainer from '../src/components/quizcontainer.js'
 
 const Title = styled.h1`
   font-size: 50px;
@@ -32,17 +35,6 @@ flex: 1;
 background-size: cover;
 background-position: center;`
 
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10%;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
-
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
@@ -62,18 +54,15 @@ export default function Home() {
               console.log('Fazendo uma submissão por meio do react');
             }}
             >
-              <input
-                onChange={function (infosDoEvento) {
-                  console.log(infosDoEvento.target.value);
-                  // State
-                  // name = infosDoEvento.target.value;
-                  setName(infosDoEvento.target.value);
-                }}
-                placeholder="digite seu nome"
+              <Input
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="digite seu nome aqui"
+                value={name}
               />
-              <button type="submit" disabled={name.length === 0}>
-                Jogar
-              </button>
+              <Button type="submit" disabled={name.length === 0}>
+                {`Jogar`}
+              </Button>
             </form>
           </Widget.Content>
         </Widget>

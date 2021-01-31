@@ -5,24 +5,38 @@
     "questions": [
       {
         "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Como fazer um seletor por id via CSS?",
-        "description": "Essa é pra aquecer",
+        "title": "Geralt was looking for Ciri. Which physical feature did he often mention to people when asking about her?",
+        "description": "This one is to warm up",
         "answer": 2,
         "alternatives": [
-          ".elemento",
-          "*elemento",
-          "#elemento",
-          "%elemento"
+          "amber eyes",
+          "ashen hair",
+          "pointy ears",
+          "blue skin"
         ]
       },
       {
         "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Como fazer um background gradiente com css?",
-        "description": "Faz tempo em haha",
+        "title": "Drowners were a necrophage creature, meaning they ate corpses. Where would you most likely encounter a Drowner?",
+        "description": "",
         "answer": 0,
         "alternatives": [
-           "background: linear-gradient(#e66465, #9198e5);",
-           "background: gradient(#e66465, #9198e5);"
+           "near a body of water",
+           "on a busy street",
+           "in a graveyard",
+           "inside a crate"
+        ]
+      },
+      {
+        "image": "https://qph.fs.quoracdn.net/main-qimg-3806242b73c4b4b0c7fd6ae9a6c7cb51",
+        "title": "The Bloody Baron was a main character in the game's plot. Who was he searching for?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "an unicorn",
+           "Ciri",
+           "his wife and daughter",
+           "a wizard"
         ]
       }
     ],
