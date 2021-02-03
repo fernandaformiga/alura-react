@@ -126,7 +126,7 @@ function LoadingWidget() {
               {JSON.stringify(question, null, 4)}
             </pre> */}
             <Button type="submit" disabled = {!hasAlternativeSelected}>
-              Confirmar
+              SEND
             </Button>
             {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
             {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
