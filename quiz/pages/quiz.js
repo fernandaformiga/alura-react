@@ -128,8 +128,8 @@ function LoadingWidget() {
             <Button type="submit" disabled = {!hasAlternativeSelected}>
               SEND
             </Button>
-            {isQuestionSubmited && isCorrect && <p>Você acertou!</p>}
-            {isQuestionSubmited && !isCorrect && <p>Você errou!</p>}
+            {isQuestionSubmited && isCorrect && <p>You got it right!</p>}
+            {isQuestionSubmited && !isCorrect && <p>Oops, wrong option!</p>}
           </form>
         </Widget.Content>
       </Widget>
