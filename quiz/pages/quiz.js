@@ -10,25 +10,24 @@ function ResultWidget({ results}) {
   return (
     <Widget>
       <Widget.Header>
-        Resultado
+        RESULT
       </Widget.Header>
 
       <Widget.Content>
-        <p>Você acertou 
+        <p>You got 
           {' '}
           {results.filter((x) => x).length}
           {' '}
-          perguntas!</p>
+          questions right!</p>
         <ul>
           {results.map((result, index) => (
          <li key={`result__${index}`}>
          #
          {index + 1}
          {' '}
-         Resultado:
          {result === true
-           ? 'Acertou'
-           : 'Errou'}
+           ? ' right'
+           : ' wrong'}
         </li>
           ))}
         </ul>
@@ -69,7 +68,7 @@ function LoadingWidget() {
         <Widget.Header>
           {/* <BackLinkArrow href="/" /> */}
           <h3>
-            {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
+            {`Question ${questionIndex + 1} out of ${totalQuestions}`}
           </h3>
         </Widget.Header>
   

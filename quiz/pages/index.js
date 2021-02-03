@@ -57,18 +57,18 @@ export default function Home() {
               <Input
                 name="nomeDoUsuario"
                 onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
-                placeholder="digite seu nome aqui"
+                placeholder="What's your name?"
                 value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
-                {`Jogar`}
+                {`PLAY`}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
         <Widget>
         <Widget.Content>
-            <p>asdadasd</p>
+            <p>What do you know about Witcher 3?</p>
           </Widget.Content>
         </Widget>
         <Footer />

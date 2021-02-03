@@ -4,39 +4,64 @@
     "description": "Teste os seus conhecimentos sobre CSS e vamos ver quantos layouts você vai deixar de quebrar",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Geralt was looking for Ciri. Which physical feature did he often mention to people when asking about her?",
-        "description": "This one is to warm up",
-        "answer": 2,
+        "image": "https://steamuserimages-a.akamaihd.net/ugc/172663186569489136/E9EA325ECCAF140EC9AA6596A606EE4059A70C10/",
+        "title": "What is the name of Ciri's mother?",
+        "description": "",
+        "answer": 4,
         "alternatives": [
-          "amber eyes",
-          "ashen hair",
-          "pointy ears",
-          "blue skin"
+          "Fringilla",
+          "Visenna",
+          "Yennefer",
+          "Calanthe",
+          "Pavetta"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Drowners were a necrophage creature, meaning they ate corpses. Where would you most likely encounter a Drowner?",
+        "image": "https://64.media.tumblr.com/f1ba9d561f2dbc406c761becb9f0d955/c339adde4e975479-08/s500x750/3e4cf9d731cb3064107ba6d2080373e1dc143e05.gif",
+        "title": "Gaunter O'dimm is a powerful character. How is he NOT called?",
+        "description": "",
+        "answer": 1,
+        "alternatives": [
+           "Man of Glass",
+           "Nightingale Prince",
+           "Master Mirror",
+           "Evil Incarnate"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/bd/33/46/bd3346a76e81c3ccb2cfe7eec07d88b1.gif",
+        "title": "Who is this character?",
+        "description": "",
+        "answer": 3,
+        "alternatives": [
+           "Dandelion",
+           "Vesemir",
+           "Bloody Baron",
+           "Lambert"
+        ]
+      },
+      {
+        "image": "http://68.media.tumblr.com/0c98b889c0ecfedca3d836abe48a7d64/tumblr_o9rb4nwCf81tokbopo1_r1_540.gif",
+        "title": "Where does Geralt meet Triss first in the game?",
+        "description": "",
+        "answer": 2,
+        "alternatives": [
+           "Oxenfurt",
+           "Skellige",
+           "Novigrad",
+           "The White Orchard"
+        ]
+      },
+      {
+        "image": "https://i.pinimg.com/originals/76/98/ea/7698ea5228eb1f071e12067b79b901ba.gif",
+        "title": "Which one is NOT a Witcher sign?",
         "description": "",
         "answer": 0,
         "alternatives": [
-           "near a body of water",
-           "on a busy street",
-           "in a graveyard",
-           "inside a crate"
-        ]
-      },
-      {
-        "image": "https://qph.fs.quoracdn.net/main-qimg-3806242b73c4b4b0c7fd6ae9a6c7cb51",
-        "title": "The Bloody Baron was a main character in the game's plot. Who was he searching for?",
-        "description": "",
-        "answer": 2,
-        "alternatives": [
-           "an unicorn",
-           "Ciri",
-           "his wife and daughter",
-           "a wizard"
+           "Hatha",
+           "Igni",
+           "Aard",
+           "Quen"
         ]
       }
     ],
